@@ -1,0 +1,71 @@
+:root {
+    --hcolor: navy;
+    --hcolor2: white;
+    --boxcolor: silver;
+
+}
+
+header, h2, h3,h4 {
+    background-color: var(--hcolor);
+    color: var(--hcolor2);
+}
+
+header {
+    position: relative;
+    height: 30px;
+    background-color: var(--hcolor);
+}
+
+header h1 {
+    position: absolute;
+    left: 0;
+    /* top: 50%; */
+    font-size: 200%;
+    /* padding: 10px;
+    margin: 1%; */
+}
+
+h2 {
+    font-size: 150%;
+
+}
+
+header nav {
+    float: right;
+    /* padding: 1%; */
+}
+
+header nav a {
+    color: var(--hcolor2);
+    padding: 10px;
+}
+
+main {
+    margin-top: 10px;
+    display: flex;
+}
+
+.box1, .box2, .box3 {
+    width: 33%;
+    margin: 10px;
+    padding: 10px
+    ;
+    background-color: var(--boxcolor);
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .box1, .box2, .box3 {
+        width: 100%;
+    }
+}
