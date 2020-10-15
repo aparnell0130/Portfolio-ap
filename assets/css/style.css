@@ -57,7 +57,6 @@ h2 {
     text-align: right;
     width: 10%;
     border-right: solid rgb(59, 57, 57);
-    flex-shrink: 2;
 }
 
 section {
@@ -70,12 +69,10 @@ section {
 
 .box1 p, .box2 ul {
     width: 90%;
-    flex-shrink: 2;
 }
 
 .box3 ul {
     width: 90%;
-    flex-shrink: 2;
     display: flex;
     justify-content: space-evenly;
 } 
