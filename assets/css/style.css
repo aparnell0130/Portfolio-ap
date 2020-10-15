@@ -1,12 +1,13 @@
 header {
     height: 40px;
-    background-color: rgb(59, 57, 57);
+    background-color: #445877;
 }
 
 header h1 {
     float: left;
     font-size: 200%;
     margin-top: 3px;
+    color: #445877;
     background-color: darkturquoise;
 }
 
@@ -14,6 +15,7 @@ h3 {
     background-color: darkturquoise;
     font-size: 150%;
     width: 200px;
+    color: #445877;
 }
 
 .backimg{
@@ -55,7 +57,8 @@ h2 {
     padding-right: 10px;
     text-align: right;
     width: 10%;
-    border-right: solid rgb(59, 57, 57);
+    color: #445877;
+    border-right: solid #445877;
 }
 
 section {
@@ -90,11 +93,14 @@ section {
 .libig img {
     width: 100%;
     height: 100%;
+    border: solid darkturquoise;
 }
 
 .lismall img {
     width: 100%;
     height: 100%;
+    border: solid darkturquoise;
+
 }
 
 .box3 ul {
@@ -102,6 +108,13 @@ section {
     display: flex;
     justify-content: space-evenly;
 } 
+
+a:hover {
+    background-color: dimgray;
+}
+img:hover{
+    opacity: .7;
+}
 
 @media screen and (max-width: 768px) {
     header {
