@@ -1,0 +1,79 @@
+body{
+    background-image: url('https://media4.giphy.com/media/xTiTng3MYzqDGtNXhK/200w.gif');
+    background-size: cover;    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+p { 
+    width: 690px;
+    } 
+
+#img1 {
+    border: 10px ridge red;
+}
+
+.table {
+    border: 1px solid black; 
+    width:100%; 
+    background-color: black;
+}
+
+th {
+    border: 1px solid black; 
+    background-color: white;
+}
+
+.td {
+    border: 1px solid black; 
+    background-color: white;
+}
+
+.img2 {
+    width: 100px; 
+    height: 100px;
+}
+
+.white {
+    color: white
+}
+a {
+    color: greenyellow
+}
+
+.right {
+  position: absolute;
+  right: 0px;    
+  padding: 10px;
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: .3;
+  }
+}
+
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  /* padding: 16px; */
+  /* font-size: 16px; */
+  cursor: pointer;
+  float: right;
+  overflow: auto;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: black;
+  border: rgb(190, 8, 8);
+}

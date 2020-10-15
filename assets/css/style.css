@@ -50,7 +50,6 @@ main {
 
 h2 {
     font-size: 175%;
-    background-color: lightgray;
     margin-right: 30px;
     margin-left: 10%;
     padding-right: 10px;
@@ -65,10 +64,37 @@ section {
 
 .box1, .box2, .box3 {
     margin-top: 20px;
+    width: 100%;
 }
 
 .box1 p, .box2 ul {
     width: 90%;
+}
+
+.box2 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.libig {
+    width: 100%;
+    height: 500px;
+    margin: .5%;
+}
+.lismall {
+    width: 49%;
+    height: 100px;
+    margin: .5%;
+}
+
+.libig img {
+    width: 100%;
+    height: 100%;
+}
+
+.lismall img {
+    width: 100%;
+    height: 100%;
 }
 
 .box3 ul {
