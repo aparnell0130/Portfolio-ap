@@ -6,7 +6,7 @@ header {
     height: 40px;
     background-color: #445877;
 }
-
+/* styling for and pushes header h1 to the to the left  */
 header h1 {
     float: left;
     font-size: 200%;
@@ -14,7 +14,17 @@ header h1 {
     color: #445877;
     background-color: #92CCCE;
 }
-
+/* pushes nav bar to the right */
+header nav {
+    float: right;
+    padding: .5%;
+}
+/* styling for links in nav bar */
+header nav a {
+    color: #92CCCE;
+    padding: 10px;
+}
+/* styling for all h3 */
 h3 {
     background-color: #92CCCE;
     font-size: 150%;
@@ -22,7 +32,7 @@ h3 {
     width: 200px;
     color: #445877;
 }
-
+/* banner background image */
 .backimg {
     position: relative;
     height: 200px;
@@ -31,30 +41,24 @@ h3 {
     background-size: cover;
     background-position: center;
 }
-
+/* text in banner */
 .backimg h3 {
     position: absolute;
     right: 7px;
     bottom: 5px;
 }
-
-header nav {
-    float: right;
-    padding: .5%;
-}
-
-header nav a {
-    color: #92CCCE;
-    padding: 10px;
-}
-
+/* slightly pushes right side of main content to the left */
 main {
-    margin: 0 auto;
-    clear: both;
-    display: flex;
-    flex-direction: column;
+    margin-right: 5%;
 }
-
+/* position and size for profile pic in about me */
+.profPic {
+    width: 150px;
+    height: 200px;
+    margin-right: 10px;
+    float: left;
+}
+/* styling for section headers */
 h2 {
     font-size: 175%;
     margin-right: 30px;
@@ -65,84 +69,84 @@ h2 {
     color: #445877;
     border-right: solid #445877;
 }
-
+/* used to put heading to the left of each section */
 section {
     display: flex;
 }
-
+/* margin */
 .box1, .box2, .box3 {
     margin-top: 20px;
     width: 100%;
 }
-
+/* sets width for right side of section */
 .box1 p, .box2 ul {
     width: 90%;
 }
-
+/* flexes unordered lists */
 .box2 ul, header ul {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* set size of large image area and position to set text inside of large image */
 .libig {
     position: relative;
     width: 100%;
     height: 500px;
     margin: .5%;
 }
+/* size for large image within .libig */
+.libig img {
+    width: 100%;
+    height: 100%;
+    border: solid  #445877;
+}
+/* position for text in large image */
+.libig h3 {
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+}
+/* set size of small image areas and position to set text inside of small images */
 .lismall {
     position: relative;
     width: 49%;
     height: 100px;
     margin: .5%;
 }
-
-.libig img {
-    width: 100%;
-    height: 100%;
-    border: solid  #445877;
-}
-
-.libig h3 {
-    position: absolute;
-    left: 1%;
-    bottom: 1%;
-}
-
+/* size for small images within .lismall */
 .lismall img {
     width: 100%;
     height: 100%;
     border: solid  #445877;
 
 }
-
-
+/* position for text in small images */
 .lismall h3 {
     position: absolute;
     width: 30%;
     bottom: 1%;
     left: 1%;
 }
-
+/* flex styling for unordered list in contact me area */
 .box3 ul {
     width: 90%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 } 
-
+/* changes background color for links when hovering */
 a:hover {
     background-color: dimgray;
 }
-
+/* changes text color for links in contact me area when hovering */
 .box3 a:hover {
     color: #92CCCE;
 }
-
+/* changes opacity while hovering over work area images */
 .lismall:hover, .libig:hover {
     opacity: .7;
 }
-
+/* makes changes at screen width 1024px and lower */
 @media screen and (max-width: 1024px) {
        
         h2 {
@@ -153,18 +157,19 @@ a:hover {
             font-size: 110%;
         }
     }
-
+/* makes changes at screen width 768px or lower */
 @media screen and (max-width: 768px) {
+    /* changes header height and positions to set position for h1 when screen width 768px or lower */
     header {
         height: 70px;
         position: relative;
     }
-
+    /* changes flex direction for nav bar when screen width 768px or lower */
     header ul {
         display: flex;
         flex-direction: column;
     }
-
+    /* changes h1 position when screen width 768px or lower */
     h1 {
         position: absolute;
         left: 0;
@@ -180,8 +185,12 @@ a:hover {
         height: 10px;
         font-size: 50%;
     }
-}
 
+    .backimg h3 {
+        width: 10%;
+    }
+}
+/* makes changes at screen width 475px and lower */
 @media screen and (max-width: 475px) {
     
     h2 {
