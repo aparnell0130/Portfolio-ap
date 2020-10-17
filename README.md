@@ -1,8 +1,5 @@
 # Portfolio-aphw
 
-# Profile Picture
-<img src="assets\images\img_2295.jpg" alt="profile " width="150">
-
 ## Description
 
 This is a portfolio page I did for bootcamp homework. The intent of this assignment was to create a portfolio using a design given and make it responsive. In this portfolio you will see links to other pages of things I have created.
